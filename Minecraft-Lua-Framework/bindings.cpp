@@ -120,8 +120,6 @@ void Bindings::MinecraftClass()
 	jclass* klasses;
 	jvm.GetJVMTI()->GetLoadedClasses(&count, &klasses);
 
-	std::ofstream out;
-	out.open("C:\\Minecraft\\usertypes.h");
 	for(int i = 0; i < count; i++)
 	{
 		jclass klass = klasses[i];
