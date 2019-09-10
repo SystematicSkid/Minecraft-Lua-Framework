@@ -66,6 +66,8 @@ std::vector<jfieldID> Helpers::GetKlassFields(jclass klass)
 	jint count;
 	jfieldID* fields;
 	jvm.GetJVMTI()->GetClassFields(klass, &count, &fields);
+	if (count > 300)
+		return ret;
 	for (int i = 0; i < count; i++)
 	{
 		jfieldID field = fields[i];

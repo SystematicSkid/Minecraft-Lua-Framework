@@ -8,6 +8,7 @@ private:
 	void Globals();
 	void MinecraftClass();
 	void JavaBindings();
+	void DefineUsertypes();
 public:
 
 	bool Init();

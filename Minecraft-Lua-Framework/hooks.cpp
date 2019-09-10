@@ -13,7 +13,9 @@ LRESULT CALLBACK WindowProc(HWND handle, UINT msg, WPARAM wparam, LPARAM lparam)
 	{
 		// in game
 		if (msg == WM_KEYDOWN && wparam == VK_INSERT)
+		{
 			bindings.Init();
+		}
 	}
 
 	return CallWindowProc(wndproc, handle, msg, wparam, lparam);
@@ -42,8 +44,9 @@ BOOL __stdcall hkSwapBuffers(HDC a1)
 		first = false;
 	}
 
-	printf("Object: 0x%p\n", Helpers::GetMinecraftObject());
-	Bindings::HookCall("Update");
+	auto minecraft = reinterpret_cast<uintptr_t>(Helpers::GetMinecraftObject());
+	
+	Bindings::HookCall("Update", minecraft);
 	
 	return oSwapBuffers(a1);
 }

@@ -138,6 +138,7 @@
     <ClCompile Include="bindings.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Minecraft\helpers.cpp" />
+    <ClCompile Include="Minecraft\usertypes.cpp" />
     <ClCompile Include="srg.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +149,7 @@
     <ClInclude Include="lua.h" />
     <ClInclude Include="Minecraft\definitions.h" />
     <ClInclude Include="Minecraft\helpers.h" />
+    <ClInclude Include="Minecraft\usertypes.h" />
     <ClInclude Include="minhook\MinHook.h" />
     <ClInclude Include="srg.h" />
   </ItemGroup>

@@ -49,5 +49,6 @@
 #include "Minecraft/helpers.h"
 #include "Minecraft/definitions.h"
 #include "lua.h"
+#include "Minecraft/usertypes.h"
 #include "bindings.h"
 #include "hooks.h"

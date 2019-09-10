@@ -42,6 +42,9 @@
     <ClCompile Include="Minecraft\helpers.cpp">
       <Filter>Source Files\Minecraft</Filter>
     </ClCompile>
+    <ClCompile Include="Minecraft\usertypes.cpp">
+      <Filter>Source Files\Minecraft</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
@@ -69,6 +72,9 @@
       <Filter>Header Files\Minecraft</Filter>
     </ClInclude>
     <ClInclude Include="Minecraft\definitions.h">
+      <Filter>Header Files\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\usertypes.h">
       <Filter>Header Files\Minecraft</Filter>
     </ClInclude>
   </ItemGroup>
